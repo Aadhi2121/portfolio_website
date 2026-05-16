@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aadhi Valasu Arun — Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__resume-btn" onclick="window.open('assets/resume.pdf','_blank')">Resume ↗</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <div class="hero__photo-wrap">
+        <img src="assets/images/profile.jpeg" alt="Aadhi Valasu Arun" class="hero__photo" id="heroPhoto" />
+        <div class="hero__photo-ring"></div>
+      </div>
+      <div class="hero__text">
+        <span class="hero__greeting">Hello, I'm</span>
+        <h1 class="hero__name">Aadhi Valasu<br /><em>Arun</em></h1>
+        <p class="hero__tagline">Software Engineer · Backend & Cloud Enthusiast<br />Third-year CSE @ St. Joseph's College of Engineering</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Work</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__label">01 / About</div>
+      <div class="about__grid">
+        <div class="about__text-col">
+          <h2 class="section__title">Who I Am</h2>
+          <p>I'm a passionate and motivated third-year Computer Science and Engineering student with a strong interest in <strong>software development, system design, and cloud technologies</strong>. I love building things that work reliably at scale.</p>
+          <p>Currently exploring the world of backend systems, message queues, containerisation, and DevOps. I'm always eager to bridge the gap between elegant code and real-world impact.</p>
+          <div class="about__skills">
+            <h3>Technologies I work with</h3>
+            <div class="skills-grid">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">RabbitMQ</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__label">02 / Experience</div>
+      <h2 class="section__title">Where I've Worked</h2>
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__meta">
+              <span class="timeline__company">The Hindu Group</span>
+              <span class="timeline__period">Jun 2025 – Jul 2025</span>
+            </div>
+            <h3 class="timeline__role">Web Development Intern</h3>
+            <ul class="timeline__points">
+              <li>Designed and implemented a system to process and manage news articles using <strong>RabbitMQ</strong> for message queuing.</li>
+              <li>Developed logic to segregate articles based on unique IDs, ensuring efficient filtering and categorization.</li>
+              <li>Integrated <strong>MongoDB</strong> for persistent storage, enabling reliable retrieval and management of articles.</li>
+              <li>Deployed RabbitMQ and MongoDB using <strong>Docker containers</strong> to ensure scalability and portability.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__label">03 / Projects</div>
+      <h2 class="section__title">Things I've Built</h2>
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__number">01</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Deadline Tracker</h3>
+            <p class="project-card__sub">Automated Notifications System · DevOps-Oriented Backend</p>
+            <p class="project-card__desc">A container-ready backend that uses scheduled jobs to track deadlines and fires multi-channel alerts via SMTP and Telegram Bot API.</p>
+            <div class="project-card__tags">
+              <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Docker</span><span>SMTP</span><span>Telegram API</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__number">02</div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Real-Time Log Processor</h3>
+            <p class="project-card__sub">Distributed Log Processing Pipeline</p>
+            <p class="project-card__desc">A real-time pipeline that asynchronously filters and stores application logs by severity level (INFO / WARN / ERROR), built for high availability and fault tolerance.</p>
+            <div class="project-card__tags">
+              <span>Docker</span><span>RabbitMQ</span><span>MongoDB</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section__label">04 / Education</div>
+      <h2 class="section__title">Academic Background</h2>
+      <div class="edu__grid">
+        <div class="edu__card reveal">
+          <div class="edu__year">2023 – 2027</div>
+          <div class="edu__details">
+            <h3>St. Joseph's College of Engineering</h3>
+            <p class="edu__degree">Bachelor of Engineering — Computer Science</p>
+            <p class="edu__gpa">GPA: <strong>8.68 / 10.0</strong></p>
+          </div>
+        </div>
+        <div class="edu__card reveal">
+          <div class="edu__year">2022 – 2023</div>
+          <div class="edu__details">
+            <h3>Maharishi Vidya Mandir</h3>
+            <p class="edu__degree">Class XII — PCMB + English</p>
+            <p class="edu__gpa">Score: <strong>91.2%</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs">
+        <h3 class="certs__title">Certifications</h3>
+        <div class="certs__list">
+          <div class="cert-item">
+            <span class="cert-item__org">Cisco</span>
+            <span class="cert-item__name">Networking Basics</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-item__org">NPTEL</span>
+            <span class="cert-item__name">Python for Data Science</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-item__org">NPTEL</span>
+            <span class="cert-item__name">Database Management Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__label">05 / Contact</div>
+      <h2 class="section__title">Let's Connect</h2>
+      <p class="contact__intro">I'm open to internships, collaborations, and interesting conversations. Feel free to reach out!</p>
+      <div class="contact__options">
+        <a href="mailto:aadhiarunprof@gmail.com" class="contact__card">
+          <span class="contact__icon">✉</span>
+          <span class="contact__label">Email</span>
+          <span class="contact__value">aadhiarunprof@gmail.com</span>
+        </a>
+        <a href="tel:+919994805249" class="contact__card">
+          <span class="contact__icon">☎</span>
+          <span class="contact__label">Phone</span>
+          <span class="contact__value">+91 99948 05249</span>
+        </a>
+        <a href="https://www.linkedin.com/in/aadhi-valasu-arun" target="_blank" class="contact__card">
+          <span class="contact__icon">in</span>
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">Aadhi Valasu Arun</span>
+        </a>
+        <a href="https://github.com/Aadhi2121" target="_blank" class="contact__card">
+          <span class="contact__icon">⌥</span>
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">Aadhi2121</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed & built by <strong>Aadhi Valasu Arun</strong> · <span id="year"></span></p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
